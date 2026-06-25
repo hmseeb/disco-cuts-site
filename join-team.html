@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join the Disco Cuts team in Seattle! We're looking for talented hair stylists and barbers who bring the groove. Apply to work at Seattle's funkiest salon." />
+  <title>Join the Disco Cuts Team | Disco Cuts Seattle</title>
+  <link rel="icon" type="image/png" href="https://images.squarespace-cdn.com/content/v1/6626ac88e1ca80779feb023b/18ff95a3-5b63-476b-b8bd-1b3388583855/IMG_8511.png?format=32w" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="https://images.squarespace-cdn.com/content/v1/6626ac88e1ca80779feb023b/18ff95a3-5b63-476b-b8bd-1b3388583855/IMG_8511.png?format=300w" alt="Disco Cuts logo" width="130" height="52" loading="eager" /></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="boogie-bookings.html">Boogie Bookings</a>
+        <a href="parking-location.html">Parking &amp; Location</a>
+        <a href="about.html">Disco Manifesto</a>
+        <a href="meet-the-djs.html">Meet The DJs</a>
+        <a href="med-spa.html">Med Spa POP-UP!</a>
+        <a href="funky-feedback.html">Funky Feedback</a>
+        <a href="lets-connect.html">Let's Connect</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="tel:+12065880841" class="nav-phone">📞 (206) 588-0841</a>
+        <a href="boogie-bookings.html" class="btn btn-primary btn-sm">Book Now</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Toggle mobile menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a><a href="boogie-bookings.html">Boogie Bookings</a><a href="parking-location.html">Parking &amp; Location</a><a href="about.html">Disco Manifesto</a><a href="meet-the-djs.html">Meet The DJs</a><a href="med-spa.html">Med Spa POP-UP!</a><a href="funky-feedback.html">Funky Feedback</a><a href="lets-connect.html">Let's Connect</a>
+    <div class="mobile-cta"><a href="boogie-bookings.html" class="btn btn-primary" style="width:100%;justify-content:center;">Book Your Cut</a><a href="tel:+12065880841" class="btn btn-secondary" style="width:100%;justify-content:center;">📞 Call Us</a></div>
+  </nav>
+
+  <main>
+    <section class="page-hero" style="background:linear-gradient(135deg,#0a1a2e,#0E0E18,#1a0a2e)">
+      <div class="disco-deco disco-deco-1"></div>
+      <div class="disco-deco disco-deco-2"></div>
+      <div class="container" style="position:relative;z-index:1">
+        <span class="badge badge-purple">We're Hiring</span>
+        <h1 class="page-hero-title">Join the <span class="text-gold">Disco Cuts</span> Team!</h1>
+        <p class="page-hero-sub">We're looking for talented, passionate stylists and creatives who bring both the craft and the energy. Sound like you? Let's talk.</p>
+      </div>
+    </section>
+
+    <section class="about-section section-padding">
+      <div class="container">
+        <div class="join-content">
+          <!-- Form -->
+          <div class="reveal">
+            <div class="booking-form">
+              <h2 style="font-family:'DM Serif Display',serif;font-size:28px;margin-bottom:8px;">Apply to Join the Crew</h2>
+              <p style="color:var(--text-secondary);font-size:15px;margin-bottom:32px;">Tell us about yourself and why you'd be a great fit for the Disco Cuts family.</p>
+
+              <div class="form-success" style="display:none;background:rgba(20,184,166,0.1);border:1px solid var(--teal);color:var(--teal);padding:16px;border-radius:var(--radius-sm);margin-bottom:24px;">
+                🎉 Application received! We'll review your info and be in touch soon.
+              </div>
+
+              <form data-disco-form novalidate>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+                  <div class="form-group">
+                    <label class="form-label" for="ap-fname">First Name *</label>
+                    <input class="form-control" type="text" id="ap-fname" name="fname" required placeholder="First name" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="ap-lname">Last Name *</label>
+                    <input class="form-control" type="text" id="ap-lname" name="lname" required placeholder="Last name" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="ap-email">Email *</label>
+                  <input class="form-control" type="email" id="ap-email" name="email" required placeholder="you@example.com" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="ap-phone">Phone *</label>
+                  <input class="form-control" type="tel" id="ap-phone" name="phone" required placeholder="(206) 555-0000" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="ap-role">What role interests you? *</label>
+                  <select class="form-control" id="ap-role" name="role" required>
+                    <option value="" disabled selected>Choose a role…</option>
+                    <option>Hair Stylist</option>
+                    <option>Barber</option>
+                    <option>Color Specialist</option>
+                    <option>Esthetician / Med Spa</option>
+                    <option>Salon Assistant / Apprentice</option>
+                    <option>Other / Multiple</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="ap-experience">Years of Experience</label>
+                  <select class="form-control" id="ap-experience" name="experience">
+                    <option value="" selected>Select…</option>
+                    <option>Less than 1 year</option>
+                    <option>1–2 years</option>
+                    <option>3–5 years</option>
+                    <option>5–10 years</option>
+                    <option>10+ years</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="ap-portfolio">Portfolio / Instagram Link</label>
+                  <input class="form-control" type="url" id="ap-portfolio" name="portfolio" placeholder="https://instagram.com/yourhandle" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="ap-why">Why do you want to join Disco Cuts? *</label>
+                  <textarea class="form-control" id="ap-why" name="why" rows="5" required placeholder="Tell us about your passion for hair, your style, and why you'd be a great fit for our team..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+                  🎵 Submit My Application
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Info -->
+          <div class="reveal" style="transition-delay:0.15s">
+            <div class="section-header">
+              <span class="badge badge-purple">Why Disco Cuts?</span>
+              <h2 class="section-title" style="font-size:clamp(26px,3.5vw,42px)">Work Where the <span class="text-gold">Magic Happens</span></h2>
+              <p style="color:var(--text-secondary);font-size:16px;line-height:1.75;">
+                Joining Disco Cuts means joining a family. We're a team of passionate
+                creators who believe work should be fun, creative, and rewarding.
+              </p>
+            </div>
+
+            <div class="perks-grid">
+              <div class="perk-card">
+                <div class="perk-icon">🎵</div>
+                <div class="perk-title">Amazing Culture</div>
+                <div class="perk-desc">Great music, great people, zero drama. We work hard and have fun doing it.</div>
+              </div>
+              <div class="perk-card">
+                <div class="perk-icon">💰</div>
+                <div class="perk-title">Competitive Pay</div>
+                <div class="perk-desc">Competitive commission structure plus tips. Your talent pays off here.</div>
+              </div>
+              <div class="perk-card">
+                <div class="perk-icon">📚</div>
+                <div class="perk-title">Education &amp; Growth</div>
+                <div class="perk-desc">Ongoing education, product knowledge, and opportunities to grow your skills.</div>
+              </div>
+              <div class="perk-card">
+                <div class="perk-icon">🤝</div>
+                <div class="perk-title">Supportive Team</div>
+                <div class="perk-desc">A genuine team environment where everyone has your back. No toxic competition.</div>
+              </div>
+              <div class="perk-card">
+                <div class="perk-icon">🌟</div>
+                <div class="perk-title">Creative Freedom</div>
+                <div class="perk-desc">We encourage your creativity. This is your canvas — bring your style.</div>
+              </div>
+              <div class="perk-card">
+                <div class="perk-icon">📍</div>
+                <div class="perk-title">Prime Seattle Location</div>
+                <div class="perk-desc">A great location in Seattle with strong foot traffic and a built-in clientele.</div>
+              </div>
+            </div>
+
+            <div style="margin-top:32px;background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.2);border-radius:var(--radius-md);padding:24px">
+              <h3 style="font-size:18px;font-weight:600;margin-bottom:10px">Questions?</h3>
+              <p style="font-size:15px;color:var(--text-secondary);line-height:1.65;margin-bottom:16px">
+                Reach out to us directly and let's chat about what an opportunity at Disco Cuts could look like for you.
+              </p>
+              <div style="display:flex;gap:12px;flex-wrap:wrap">
+                <a href="tel:+12065880841" class="btn btn-primary btn-sm">📞 Call Us</a>
+                <a href="mailto:discocuts@gmail.com" class="btn btn-secondary btn-sm">✉️ Email Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom" style="justify-content:center;text-align:center;">
+        <div class="footer-copyright">&copy; 2024 Disco Cuts, Seattle WA · <a href="tel:+12065880841" style="color:var(--gold)">(206) 588-0841</a> · <a href="mailto:discocuts@gmail.com" style="color:var(--gold)">discocuts@gmail.com</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
